@@ -1,0 +1,14 @@
+spring:
+	application:
+		name: authenticationServer
+		
+server:
+	port: 9000
+	contextPath: /uaa
+
+security:	
+	ignored: /css/**,/js/**,/favicon.ico,/webjars/**
+	
+logging:
+	level:
+		org.springframework.security: DEBUG
