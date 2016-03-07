@@ -100,13 +100,13 @@ public class Oauth2ServerConfiguration extends AuthorizationServerConfigurerAdap
         		.resourceIds(RESOURCE_ID)
         		.redirectUris("http://anywhere?key=value")
         		.secret("secret123")
-        		.and()
-        	.withClient("my-client-with-secret")
-        	.authorizedGrantTypes("client_credentials", "refresh_token")
-        	.authorities("USER", "ADMIN")
-        	.scopes("read")
-        	.resourceIds(RESOURCE_ID)
-        	.secret("secret");
+        	.and()
+        		.withClient("my-client-with-secret")
+        		.authorizedGrantTypes("client_credentials", "refresh_token")
+        		.authorities("USER", "ADMIN")
+        		.scopes("read")
+        		.resourceIds(RESOURCE_ID)
+        		.secret("secret");
         // @formatter:on
 
 		// clients
